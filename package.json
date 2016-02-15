@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "gulp-nodemon": "^1.0.4",
+    "gulp-shell": "^0.2.7"
+  },
+
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.4.5",
+    "mongoose": "^4.1.0",
+    "q": "^1.4.1",
+    "request": "^2.36.0"
+  }
+}
