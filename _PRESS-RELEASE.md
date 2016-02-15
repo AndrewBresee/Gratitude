@@ -19,26 +19,46 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
   > Name the product in a way the reader (i.e. your target customers) will understand.
 
+  Gratitudes 
+
 ## Sub-Heading ##
   > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+
+  For those that want to get more enjoyment out of life, and see the world in a better light. 
 
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
+  Many studies show that writing something you are greatful for a day increase overall happiness and helps retain good memories. But keeping a journal takes time, and is easy to forget. "Gratitudes" makes this easy. "Gratitudes" makes writing short tidbits simple and fun. All of your gratitudes are stored securely, so you can look through them at anytime and reexperience your fond memories. 
+
 ## Problem ##
   > Describe the problem your product solves.
+
+  Writing in a journal is a hard habit to keep. It takes time, is easy to forget, and can feel intimidating when we don't have much to write about. 
 
 ## Solution ##
   > Describe how your product elegantly solves the problem.
 
+
+  Gratitudes is a simple app that encourages you to only write a little bit everyday. It is very easy to use, and only takes a few seconds to write about something you are greatful for. 
+
+
 ## Quote from You ##
   > A quote from a spokesperson in your company.
+
+  "'Gratitudes" makes journaling fast, easy, and Great-full! 
 
 ## How to Get Started ##
   > Describe how easy it is to get started.
 
+ Getting started is easy! All you have to do is download the app, and make a profile. All of which you can do in under a minute! After that, you are set to start writing your daily gratitudes. 
+
 ## Customer Quote ##
   > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
+  "'Gratitudes' is great! Since I have started a month ago I have writen about something nice that happened to me almost everyday. My overall happiness has deffinetly improved! On days when I am not feeling so great I go back and re-read all of the nice things that have happened to me. It is a total pick me up!"
+
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
+
+  If you want to start using the simplest, and most greatful journaling app, download Greatfulness today! You won't regret it. 
