@@ -2,40 +2,47 @@ var Post = require('./postModel.js');
 var Q = require('q');
 
 var findPost = Q.nbind(Post.findOne, Post);
-var createLink = Q.nbind(Post.create, Post);
+var createPost = Q.nbind(Post.create, Post);
 var findAllLinks = Q.nbind(Post.find, Post);
 
 module.exports = {
 
   newPost: function (req, res, next) {
 
-    console.log(req.body)
+    console.log(req.body.post)
+    var entry = req.body.post;
+    
+    findPost({post: entry})
+      .then(function (match) {
+        if (match) {
+          res.send(match);
+        } else {
+          return entry;
+        }
+      })
 
-    // var post = req.body.post;
-    // if (!util.isValidUrl(post)) {
-    //   return next(new Error('Not a valid url'));
-    // }
+      .then(function (post) {
+        if (post) {
+          var newPost = {
+            post: post
+          };
 
-    // findPost({post: post})
-    //   .then(function (match) {
-    //     if (match) {
-    //       res.send(match);
-    //     } else {
-    //       return res.post;
-    //     }
-    //   })
+          return createPost(newPost);
+        }
+      })
 
-    //   .then(function (title) {
-    //     if (title) {
-    //       var newPost = {
-    //         post: post,
-    //         title: title
-    //       };
-    //       return createPost(newPost);
-    //     }
-    //   })
+      .then(function (createdPost) {
+        if (createdPost) {
+          res.json(createdPost);
+        }
+      })
 
-    //   .then(function (createdLink) {
+      .fail(function (error) {
+        next(error);
+      });
+      
+
+    //   .then(function (createdPost) {
     //     if (createdPost) {
     //       res.json(createdPost);
     //     }

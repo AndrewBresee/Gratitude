@@ -7,7 +7,7 @@ var app = express();
 app.use(express.static('../Client/'))
 
 
-// connect to mongo database named "shortly"
+// connect to mongo database named "gratitude"
 mongoose.connect('mongodb://localhost/gratitude');
 
 
