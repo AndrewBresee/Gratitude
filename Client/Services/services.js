@@ -4,15 +4,19 @@ angular.module('gratitude.services', [])
 
   var addOne = function (post) {
 
+    console.log("ADDED ONE : ", post)
+
+
     return $http({
       method: 'POST',
       url: '/api/post',
-      data: post
+       data: {
+        post: post
+      }
     })
-
     .then(function (data) {
       return data;
-    });
+    })
   };
 
   var getAll = function () {

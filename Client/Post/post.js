@@ -7,22 +7,19 @@ angular.module('gratitude.post', [])
 
  // console.log("controller called")
 
-  $scope.addPosts = function () {
-
+  $scope.addPosts = function (post) {
     Post.addOne($scope.newPost)
       .then(function (data) {
       	console.log(data)
-      
       });
   };
 
-  $scope.newPosts = function () { 
-  	
-    Post.addOne($scope.newPost)
-      .then(function (data) {
-      	console.log(data)
+  // $scope.newPosts = function () { 
+  //   Post.addOne($scope.newPost)
+  //     .then(function (data) {
+  //     	console.log(data)
       
-      });
-  };
+  //     });
+  // };
 
 });
