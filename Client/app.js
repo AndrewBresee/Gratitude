@@ -4,7 +4,7 @@ angular.module('gratitude', [
   'gratitude.auth',
   'gratitude.post',
   'gratitude.history',
-   'ngRoute'
+  'ngRoute'
 ])
 
 .config(function ($routeProvider, $httpProvider) {

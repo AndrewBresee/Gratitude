@@ -1,7 +1,7 @@
-<div>
+<div id='container' ng-controller="PostController">
 	<h1>Post a new gratitude</h1>
-	<form>
-		<input type="text" class="gratitude-input" name="gratitude"><br>Your Gratitudes:<br>
-
+	<form name="addPost" ng-submit="addPost()">
+		<input name="gratitude" type="text" class="gratitude-input" >
+		<button>Be Greatful!</button>
 	</form>
 </div>
