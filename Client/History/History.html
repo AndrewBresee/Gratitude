@@ -1,7 +1,11 @@
-<div>
+<div name="getPosts" ng-submit="getAllPosts()" novalidate>
 	<h1 class="title">Your Gratitude History</h1>
-	<form name="getPosts" ng-submit="getAllPosts()" novalidate>
-		<button>Get posts</button>
-	</form>
+
+
+	 <div class='PostHistory' ng-repeat="post in data.post | orderBy:'-date'">
+    <div class='PostTitle'>{{ post.post }}</div>
+    <div class='PostDate'>{{ post.date }}</div>
+  </div>
+
 
 </div>

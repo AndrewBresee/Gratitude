@@ -6,14 +6,14 @@ angular.module('gratitude.history', [])
 
   $scope.getAllPosts = function () {
 
-  	console.log("history button pressed!")
-
     Post.getAll()
       .then(function (data) {
-        $scope.data.links = data;
+        $scope.data.post = data;
         console.log(data)
       });
   };
+
+  $scope.getAllPosts(); 
 
 
 });
