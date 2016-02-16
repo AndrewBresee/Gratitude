@@ -4,7 +4,7 @@ angular.module('gratitude.history', [])
   // Your code here
   $scope.data = {};
 
-  var userName =   $window.localStorage.getItem('userName');
+ $scope.userName = $window.localStorage.getItem('userName');
 
   if (!Auth.isAuth()) {
     console.log("ACCESS DENIED!")
@@ -12,7 +12,7 @@ angular.module('gratitude.history', [])
   }
 
   $scope.getAllPosts = function () {
-    Post.getAll(userName)
+    Post.getAll($scope.userName)
       .then(function (data) {
         $scope.data.post = data;
         console.log(data)

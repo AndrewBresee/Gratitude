@@ -5,7 +5,7 @@ angular.module('gratitude.post', [])
 
   $scope.data = [];
 
-  var userName =   $window.localStorage.getItem('userName');
+  $scope.userName = $window.localStorage.getItem('userName');
 
   if (!Auth.isAuth()) {
     console.log("ACCESS DENIED!")
@@ -13,7 +13,7 @@ angular.module('gratitude.post', [])
   }
 
   $scope.addPosts = function (post, date) {
-    Post.addOne($scope.newPost, $scope.date, userName)
+    Post.addOne($scope.newPost, new Date(), $scope.userName)
       .then(function (data) {
       	console.log(data)
       });
