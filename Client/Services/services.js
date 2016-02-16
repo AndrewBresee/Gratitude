@@ -1,4 +1,4 @@
-angular.module('shortly.services', [])
+angular.module('gratitude.services', [])
 
 .factory('Post', function ($http) {
 

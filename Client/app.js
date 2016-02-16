@@ -1,8 +1,10 @@
+
 angular.module('gratitude', [
   'gratitude.services',
   'gratitude.auth',
   'gratitude.post',
-  'gratitude.history'
+  'gratitude.history',
+   'ngRoute'
 ])
 
 .config(function ($routeProvider, $httpProvider) {
