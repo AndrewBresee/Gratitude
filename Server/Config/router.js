@@ -8,7 +8,7 @@ module.exports = function (app, express) {
 
   // app.get('/:code', linksController.navToLink);
   // app.post('/api/signin', userController.signin);
-  // app.post('/api/signup', userController.signup);
+  app.post('/api/signup', userController.signup);
 
 
   // authentication middleware used to decode token and made available on the request

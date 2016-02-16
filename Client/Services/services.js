@@ -47,16 +47,6 @@ angular.module('gratitude.services', [])
   // that JWT is then stored in localStorage as 'com.shortly'
   // after you signin/signup open devtools, click resources,
   // then localStorage and you'll see your token from the server
-  var signin = function (user) {
-    return $http({
-      method: 'POST',
-      url: '/api/signin',
-      data: user
-    })
-    .then(function (resp) {
-      return resp.data.token;
-    });
-  };
 
   var signup = function (user) {
     return $http({
@@ -64,6 +54,19 @@ angular.module('gratitude.services', [])
       url: '/api/signup',
       data: user
     })
+
+    .then(function (resp) {
+      return resp.data.token;
+    });
+  };
+
+  var signin = function (user) {
+    return $http({
+      method: 'POST',
+      url: '/api/signin',
+      data: user
+    })
+    
     .then(function (resp) {
       return resp.data.token;
     });

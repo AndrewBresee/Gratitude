@@ -12,7 +12,7 @@ angular.module('gratitude', [
       templateUrl: 'Authentication/signin.html',
       controller: 'AuthController'
     })
-    .when('/signup', {
+    .when('/signin', {
       templateUrl: 'Authentication/signin.html',
       controller: 'AuthController'
     })
@@ -26,6 +26,10 @@ angular.module('gratitude', [
     })
     .when('/signout', {
       templateUrl: 'Authentication/signin.html',
+      controller: 'AuthController'
+    })
+    .when('/signup', {
+      templateUrl: 'Authentication/signup.html',
       controller: 'AuthController'
     })
     .when('/', {
