@@ -4,6 +4,7 @@ var userController = require('../Users/usersController.js');
 module.exports = function (app, express) {
 
    app.get('/api/post', postController.newPost);
+   app.post('/api/post', postController.newPost);
 
   // app.get('/:code', linksController.navToLink);
   // app.post('/api/signin', userController.signin);

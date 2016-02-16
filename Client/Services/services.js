@@ -2,14 +2,14 @@ angular.module('gratitude.services', [])
 
 .factory('Post', function ($http) {
 
-  var addOne = function (link) {
+  var addOne = function (post) {
+
     return $http({
       method: 'POST',
       url: '/api/post',
-      data: {
-        url: link
-      }
+      data: post
     })
+
     .then(function (data) {
       return data;
     });

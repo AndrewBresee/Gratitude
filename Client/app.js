@@ -1,4 +1,3 @@
-
 angular.module('gratitude', [
   'gratitude.services',
   'gratitude.auth',
@@ -39,7 +38,7 @@ angular.module('gratitude', [
 
     // We add our $httpInterceptor into the array
     // of interceptors. Think of it like middleware for your ajax calls
-    $httpProvider.interceptors.push('AttachTokens');
+    // $httpProvider.interceptors.push('AttachTokens');
 })
 
 .factory('AttachTokens', function ($window) {
