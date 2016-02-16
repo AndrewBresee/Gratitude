@@ -1,29 +1,7 @@
 .mainHead {
-	font-size: 25px;
-	font-weight: bold;
 	text-align: center;
-	background: #C0C0C0 	
 }
 
-.navigation {
-    margin: 0;
-    text-align: center;
-    padding: 0;
-    width: 200px;
-    background-color: #f1f1f1;
-}
-
-.navigation li {
-  display:inline-block;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.navigation li:hover {
-    background-color: #555;
-    color: white;
-}
 
 .PostHistory {
   padding: 10px;

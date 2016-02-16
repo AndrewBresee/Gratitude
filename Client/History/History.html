@@ -1,12 +1,14 @@
-<div name="getPosts" ng-submit="getAllPosts()" novalidate>
+<div name="getPosts" class="flow-text" ng-submit="getAllPosts()" novalidate>
 	<h1 class="title">{{userName}}'s Gratitude History</h1>
 
 
 	 <div  ng-repeat="post in data.post | orderBy:'-date'">
-	 	<div class='PostHistory'>
+	 <div class="divider"></div>
+	 	<div class="section">
 	    <div class='PostTitle'>Post: {{ post.post }}</div>
 	    <div class='PostDate'>Date: {{ post.date |  date:"MM/dd/yyyy 'at' h:mma" }}</div>
     </div>
+    <div class="divider"></div>
   </div>
 
 

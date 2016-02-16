@@ -74,6 +74,7 @@ angular.module('gratitude', [
       $http.get('session.json').then(function(r) { return Session.data = r.data;});
     }
   };
+  
   Session.updateSession();
   return Session; 
 })

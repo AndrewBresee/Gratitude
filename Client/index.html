@@ -3,19 +3,30 @@
 <head>
 
 	 <link rel="stylesheet" type="text/css" href="style.css">
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
 
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
 	<title>Gratitudes</title>
 </head>
 <body>
+
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+
 	<h1 class="mainHead">Gratitudes</h1>
 	
-	 <div class='navigation' ng-controller="AuthController">
-		<ul>
-			<li><a href="#/history">History</a></li>
-			<li><a href="#/post">Post</a></li>
-			<li><a href='' class='logout' ng-click="signout()">singout</a></li>
-		</ul>
-	</div>
+	<nav>
+		<div class="nav-wrapper" ng-controller="AuthController">
+			<ul id="nav-mobile" class="left">
+				<li><a href="#/history">History</a></li>
+				<li><a href="#/post">Post</a></li>
+				<li><a href='' class='logout' ng-click="signout()">singout</a></li>
+			</ul>
+		</div>
+	</nav>
 
 	 <div ng-view></div>
 
