@@ -4,6 +4,7 @@ angular.module('gratitude', [
   'gratitude.post',
   'gratitude.history'
 ])
+
 .config(function ($routeProvider, $httpProvider) {
   $routeProvider
     .when('/signin', {

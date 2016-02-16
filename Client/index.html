@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='gratitudes'>
 <head>
 
 	 <link rel="stylesheet" type="text/css" href="style.css">
@@ -15,6 +15,17 @@
 			<li href="#/signout">Singout</li>
 		</ul>
 	</div>
+
+	 <div ng-view></div>
+
+    <script src="lib/angular/angular.js"></script>
+    <script src="lib/angular-route/angular-route.js"></script>
+
+    <script src="Authentication/auth.js"></script>
+    <script src="Post/post.js"></script>
+    <script src="History/history.js"></script>
+    <script src="Services/services.js"></script>
+    <script src="app.js"></script>
 
 </body>
 
