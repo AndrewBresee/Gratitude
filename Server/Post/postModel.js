@@ -3,6 +3,7 @@ var crypto = require('crypto');
 
 var PostSchema = new mongoose.Schema({
  post: String,
+ date: Date
 });
 
 // var createSha = function (post) {

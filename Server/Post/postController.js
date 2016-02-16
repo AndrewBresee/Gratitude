@@ -11,6 +11,7 @@ module.exports = {
 
     console.log(req.body.post)
     var entry = req.body.post;
+    var date = req.body.date; 
     
     findPost({post: entry})
       .then(function (match) {
@@ -24,9 +25,9 @@ module.exports = {
       .then(function (post) {
         if (post) {
           var newPost = {
-            post: post
+            post: post,
+            date: date
           };
-
           return createPost(newPost);
         }
       })

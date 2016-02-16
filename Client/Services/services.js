@@ -2,16 +2,15 @@ angular.module('gratitude.services', [])
 
 .factory('Post', function ($http) {
 
-  var addOne = function (post) {
+  var addOne = function (post, date) {
 
-    console.log("ADDED ONE : ", post)
-
-
+    console.log("ADDED ONE : ", date)
     return $http({
       method: 'POST',
       url: '/api/post',
        data: {
-        post: post
+        post: post,
+        date: date
       }
     })
     .then(function (data) {

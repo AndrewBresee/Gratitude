@@ -7,8 +7,8 @@ angular.module('gratitude.post', [])
 
  // console.log("controller called")
 
-  $scope.addPosts = function (post) {
-    Post.addOne($scope.newPost)
+  $scope.addPosts = function (post, date) {
+    Post.addOne($scope.newPost, $scope.date)
       .then(function (data) {
       	console.log(data)
       });
