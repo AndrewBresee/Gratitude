@@ -5,8 +5,6 @@ angular.module('gratitude.post', [])
 
   $scope.data = [];
 
- // console.log("controller called")
-
   $scope.addPosts = function (post, date) {
     Post.addOne($scope.newPost, $scope.date)
       .then(function (data) {
@@ -14,12 +12,6 @@ angular.module('gratitude.post', [])
       });
   };
 
-  // $scope.newPosts = function () { 
-  //   Post.addOne($scope.newPost)
-  //     .then(function (data) {
-  //     	console.log(data)
-      
-  //     });
-  // };
+  
 
 });
