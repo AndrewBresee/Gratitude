@@ -2,9 +2,11 @@
 	<h1 class="title">Your Gratitude History</h1>
 
 
-	 <div class='PostHistory' ng-repeat="post in data.post | orderBy:'-date'">
-    <div class='PostTitle'>{{ post.post }}</div>
-    <div class='PostDate'>{{ post.date }}</div>
+	 <div  ng-repeat="post in data.post | orderBy:'-date'">
+	 	<div class='PostHistory'>
+	    <div class='PostTitle'>Post: {{ post.post }}</div>
+	    <div class='PostDate'>Date: {{ post.date }}</div>
+    </div>
   </div>
 
 
