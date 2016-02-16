@@ -5,6 +5,7 @@ angular.module('gratitude.services', [])
   var addOne = function (post, date) {
 
     console.log("ADDED ONE : ", date)
+
     return $http({
       method: 'POST',
       url: '/api/post',
@@ -19,11 +20,14 @@ angular.module('gratitude.services', [])
   };
 
   var getAll = function () {
+
+    console.log("SERVICES GET! ")
+
     return $http({
       method: 'GET',
       url: '/api/post'
     })
-    .then(function (links) {
+    .then(function (post) {
       return post.data;
     });
   };

@@ -6,16 +6,4 @@ var PostSchema = new mongoose.Schema({
  date: Date
 });
 
-// var createSha = function (post) {
-//   var shasum = crypto.createHash('sha1');
-//   shasum.update(post);
-//   return shasum.digest('hex').slice(0, 5);
-// };
-
-// PostSchema.pre('save', function (next) {
-//   var code = createSha(this.post);
-//   this.code = code;
-//   next();
-// });
-
 module.exports = mongoose.model('Post', PostSchema);

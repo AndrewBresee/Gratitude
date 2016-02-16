@@ -3,7 +3,7 @@ var userController = require('../Users/usersController.js');
 
 module.exports = function (app, express) {
 
-   app.get('/api/post', postController.newPost);
+   app.get('/api/post', postController.allPosts);
    app.post('/api/post', postController.newPost);
 
   // app.get('/:code', linksController.navToLink);
