@@ -24,8 +24,8 @@ angular.module('gratitude', [
       templateUrl: 'Post/Post.html',
       controller: 'PostController'
     })
-    .when('/logout', {
-      templateUrl: 'app/auth/signin.html',
+    .when('/signout', {
+      templateUrl: 'Authentication/signin.html',
       controller: 'AuthController'
     })
     .when('/', {
