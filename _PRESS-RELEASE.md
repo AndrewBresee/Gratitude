@@ -29,7 +29,7 @@ Once the project moves into development, the press release can be used as a touc
 ## Summary ##
   > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
 
-  Many studies show that writing something you are greatful for a day increase overall happiness and helps retain good memories. But keeping a journal takes time, and is easy to forget. "Gratitudes" makes this easy. "Gratitudes" makes writing short tidbits simple and fun. All of your gratitudes are stored securely, so you can look through them at anytime and reexperience your fond memories. 
+  Many studies show that writing something you are grateful for a day increase overall happiness and helps retain good memories. But keeping a journal takes time, and is easy to forget. "Gratitudes" makes this easy. "Gratitudes" makes writing short tidbits simple and fun. All of your gratitudes are stored securely, so you can look through them at anytime and reexperience your fond memories. 
 
 ## Problem ##
   > Describe the problem your product solves.
@@ -40,7 +40,7 @@ Once the project moves into development, the press release can be used as a touc
   > Describe how your product elegantly solves the problem.
 
 
-  Gratitudes is a simple app that encourages you to only write a little bit everyday. It is very easy to use, and only takes a few seconds to write about something you are greatful for. 
+  Gratitudes is a simple app that encourages you to only write a little bit everyday. It is very easy to use, and only takes a few seconds to write about something you are grateful for. 
 
 
 ## Quote from You ##
@@ -61,4 +61,4 @@ Once the project moves into development, the press release can be used as a touc
 ## Closing and Call to Action ##
   > Wrap it up and give pointers where the reader should go next.
 
-  If you want to start using the simplest, and most greatful journaling app, download Greatfulness today! You won't regret it. 
+  If you want to start using the simplest, and most grateful journaling app, download gratefulness today! You won't regret it. 

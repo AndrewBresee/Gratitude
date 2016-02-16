@@ -6,7 +6,7 @@ angular.module('gratitude.auth', [])
   $scope.signup = function () {
     Auth.signup($scope.user)
       .then(function (token) {
-        $window.localStorage.setItem('com.shortly', token);
+        $window.localStorage.setItem('com.grateful', token);
         $location.path('/post');
       })
       .catch(function (error) {
@@ -14,18 +14,21 @@ angular.module('gratitude.auth', [])
       });
   };
 
-  // $scope.signin = function () {
-  //     Auth.signin($scope.user)
-  //     .then(function (token) {
-  //       $window.localStorage.setItem('com.shortly', token);
-  //       $location.path('/post');
-  //     })
-  //     .catch(function (error) {
-  //       console.error(error);
-  //     });
-  // };
+  $scope.signin = function () {
+    console.log("AUTH SIGNIN")
+      Auth.signin($scope.user)
+      .then(function (token) {
+        $window.localStorage.setItem('com.grateful', token);
+        $location.path('/post');
+      })
+      .catch(function (error) {
+        console.error(error);
+      });
+  };
 
   $scope.signout = function () {
+    console.log("SINGOUT HAPPENED!")
     Auth.signout();
   };
+
 });

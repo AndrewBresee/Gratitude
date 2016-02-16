@@ -1,8 +1,13 @@
 angular.module('gratitude.history', [])
 
-.controller('HistoryController', function ($scope, Post) {
+.controller('HistoryController', function ($scope, Post, Auth, $location) {
   // Your code here
   $scope.data = {};
+
+  if (!Auth.isAuth()) {
+    console.log("ACCESS DENIED!")
+    $location.path('/signin');
+  }
 
   $scope.getAllPosts = function () {
 

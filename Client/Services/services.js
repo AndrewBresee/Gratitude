@@ -61,23 +61,26 @@ angular.module('gratitude.services', [])
   };
 
   var signin = function (user) {
+
+    console.log("SERVICES SIGNIN")
+    
     return $http({
       method: 'POST',
       url: '/api/signin',
       data: user
     })
-    
+
     .then(function (resp) {
       return resp.data.token;
     });
   };
 
   var isAuth = function () {
-    return !!$window.localStorage.getItem('com.shortly');
+    return !!$window.localStorage.getItem('com.grateful');
   };
 
   var signout = function () {
-    $window.localStorage.removeItem('com.shortly');
+    $window.localStorage.removeItem('com.grateful');
     $location.path('/signin');
   };
 

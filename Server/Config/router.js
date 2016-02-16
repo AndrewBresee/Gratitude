@@ -7,7 +7,7 @@ module.exports = function (app, express) {
    app.post('/api/post', postController.newPost);
 
   // app.get('/:code', linksController.navToLink);
-  // app.post('/api/signin', userController.signin);
+  app.post('/api/signin', userController.signin);
   app.post('/api/signup', userController.signup);
 
 
