@@ -46,9 +46,12 @@ module.exports = {
 
   allPosts: function (req, res, next) {
 
-    console.log("CONTROLLER GET!!")
+    user = req.params.userName; 
 
-      findAllPosts({})
+    console.log("SERVER SIDE GET USER : ", user)
+
+
+      findAllPosts({user : user})
         .then(function (posts) {
           res.json(posts);
         })
