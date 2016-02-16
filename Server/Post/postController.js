@@ -11,6 +11,9 @@ module.exports = {
 
     var entry = req.body.post;
     var date = req.body.date; 
+    var user = req.body.user;
+
+    console.log("SERVER SIDE USER : ", user);
     
     findPost({post: entry})
       .then(function (match) {
@@ -24,7 +27,8 @@ module.exports = {
         if (post) {
           var newPost = {
             post: post,
-            date: date
+            date: date,
+            user: user
           };
           return createPost(newPost);
         }

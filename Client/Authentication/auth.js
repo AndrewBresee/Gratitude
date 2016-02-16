@@ -7,6 +7,7 @@ angular.module('gratitude.auth', [])
     Auth.signup($scope.user)
       .then(function (token) {
         $window.localStorage.setItem('com.grateful', token);
+        $window.localStorage.setItem('userName', $scope.user.username);
         $location.path('/post');
       })
       .catch(function (error) {
@@ -19,6 +20,7 @@ angular.module('gratitude.auth', [])
       Auth.signin($scope.user)
       .then(function (token) {
         $window.localStorage.setItem('com.grateful', token);
+        $window.localStorage.setItem('userName', $scope.user.username);
         $location.path('/post');
       })
       .catch(function (error) {

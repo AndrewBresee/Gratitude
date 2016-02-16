@@ -3,7 +3,8 @@ var crypto = require('crypto');
 
 var PostSchema = new mongoose.Schema({
  post: String,
- date: Date
+ date: Date,
+ user: String
 });
 
 module.exports = mongoose.model('Post', PostSchema);
