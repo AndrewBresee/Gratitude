@@ -15,6 +15,7 @@ angular.module('gratitude.post', [])
   $scope.addPosts = function (post, date) {
     Post.addOne($scope.newPost, new Date(), $scope.userName)
       .then(function (data) {
+        $scope.newPost = "";
       	console.log(data)
       });
   };

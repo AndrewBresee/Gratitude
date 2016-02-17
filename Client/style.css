@@ -8,3 +8,11 @@
   border-style: solid;
   border-width: 1px;
 }
+.body {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.section{
+  margin-left: 25%;
+  margin-right: 25%;
+}

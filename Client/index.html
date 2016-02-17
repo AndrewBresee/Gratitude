@@ -21,10 +21,13 @@
 	<nav>
 		<div class="nav-wrapper" ng-controller="AuthController">
 			<ul id="nav-mobile" class="left">
-				<li><a href="#/history">History</a></li>
+				<li><a href="#/history"> My History</a></li>
 				<li><a href="#/post">Post</a></li>
-				<li><a href='' class='logout' ng-click="signout()">singout</a></li>
 			</ul>
+			<ul id="nav-mobile" class="right">
+				<li><a href='' class='logout' ng-click="signout()">Sign out</a></li>
+			</ul>
+			
 		</div>
 	</nav>
 
