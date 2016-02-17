@@ -1,5 +1,6 @@
 .mainHead {
 	text-align: center;
+  font-size: 400%;
 }
 
 
@@ -8,11 +9,7 @@
   border-style: solid;
   border-width: 1px;
 }
-.body {
+/*.section{
   margin-left: 25%;
   margin-right: 25%;
-}
-.section{
-  margin-left: 25%;
-  margin-right: 25%;
-}
+}*/

@@ -12,8 +12,6 @@ module.exports = {
     var entry = req.body.post;
     var date = req.body.date; 
     var user = req.body.user;
-
-    console.log("SERVER SIDE USER : ", user);
     
     findPost({post: entry})
       .then(function (match) {
