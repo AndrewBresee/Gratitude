@@ -16,7 +16,6 @@ angular.module('gratitude.auth', [])
   };
 
   $scope.signin = function () {
-    console.log("AUTH SIGNIN")
       Auth.signin($scope.user)
       .then(function (token) {
         $window.localStorage.setItem('com.grateful', token);

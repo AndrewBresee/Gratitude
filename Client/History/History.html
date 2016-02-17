@@ -1,7 +1,6 @@
 <div name="getPosts" class="container" ng-submit="getAllPosts()" novalidate>
 	<h3 class="title">{{userName}}'s Gratitudes</h3>
 
-
 	 <div  ng-repeat="post in data.post | orderBy:'-date'">
 	 <div class="divider"></div>
 	 	<div class="section">
@@ -10,6 +9,5 @@
     </div>
     <div class="divider"></div>
   </div>
-
 
 </div>

@@ -46,9 +46,6 @@ module.exports = {
 
     user = req.params.userName; 
 
-    console.log("SERVER SIDE GET USER : ", user)
-
-
       findAllPosts({user : user})
         .then(function (posts) {
           res.json(posts);

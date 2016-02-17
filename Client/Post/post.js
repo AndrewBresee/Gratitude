@@ -8,7 +8,6 @@ angular.module('gratitude.post', [])
   $scope.userName = $window.localStorage.getItem('userName');
 
   if (!Auth.isAuth()) {
-    console.log("ACCESS DENIED!")
     $location.path('/signin');
   }
 
