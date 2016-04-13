@@ -1,2 +1,2 @@
-#mvp
-This is a project I completed as a student at [hackreactor](http://hackreactor.com). This project was worked on with a pair.
+#Gratitude 
+A full-stack MEAN app with authentication and encryption on the back end using bcrypt 
